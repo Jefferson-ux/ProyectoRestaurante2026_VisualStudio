@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SideBarMenu));
             this.MenuVertical = new System.Windows.Forms.Panel();
+            this.btnlogoInicio = new System.Windows.Forms.PictureBox();
             this.lblcorreo = new System.Windows.Forms.Label();
             this.lbluser = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -40,7 +41,6 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.btnprod = new System.Windows.Forms.Button();
-            this.btnlogoInicio = new System.Windows.Forms.PictureBox();
             this.BarraTitulo = new System.Windows.Forms.Panel();
             this.iconminimizar = new System.Windows.Forms.PictureBox();
             this.iconrestaurar = new System.Windows.Forms.PictureBox();
@@ -49,8 +49,8 @@
             this.btnMenu = new System.Windows.Forms.PictureBox();
             this.panelContenedor = new System.Windows.Forms.Panel();
             this.MenuVertical.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnlogoInicio)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.BarraTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconminimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconrestaurar)).BeginInit();
@@ -62,6 +62,7 @@
             // MenuVertical
             // 
             this.MenuVertical.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.MenuVertical.Controls.Add(this.btnlogoInicio);
             this.MenuVertical.Controls.Add(this.lblcorreo);
             this.MenuVertical.Controls.Add(this.lbluser);
             this.MenuVertical.Controls.Add(this.pictureBox2);
@@ -72,12 +73,23 @@
             this.MenuVertical.Controls.Add(this.button3);
             this.MenuVertical.Controls.Add(this.button2);
             this.MenuVertical.Controls.Add(this.btnprod);
-            this.MenuVertical.Controls.Add(this.btnlogoInicio);
             this.MenuVertical.Dock = System.Windows.Forms.DockStyle.Left;
             this.MenuVertical.Location = new System.Drawing.Point(0, 0);
             this.MenuVertical.Name = "MenuVertical";
             this.MenuVertical.Size = new System.Drawing.Size(250, 650);
             this.MenuVertical.TabIndex = 0;
+            // 
+            // btnlogoInicio
+            // 
+            this.btnlogoInicio.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnlogoInicio.Image = ((System.Drawing.Image)(resources.GetObject("btnlogoInicio.Image")));
+            this.btnlogoInicio.Location = new System.Drawing.Point(0, -11);
+            this.btnlogoInicio.Name = "btnlogoInicio";
+            this.btnlogoInicio.Size = new System.Drawing.Size(247, 98);
+            this.btnlogoInicio.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnlogoInicio.TabIndex = 0;
+            this.btnlogoInicio.TabStop = false;
+            this.btnlogoInicio.Click += new System.EventHandler(this.btnlogoInicio_Click);
             // 
             // lblcorreo
             // 
@@ -223,18 +235,6 @@
             this.btnprod.UseVisualStyleBackColor = true;
             this.btnprod.Click += new System.EventHandler(this.btnprod_Click);
             // 
-            // btnlogoInicio
-            // 
-            this.btnlogoInicio.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnlogoInicio.Image = ((System.Drawing.Image)(resources.GetObject("btnlogoInicio.Image")));
-            this.btnlogoInicio.Location = new System.Drawing.Point(3, 6);
-            this.btnlogoInicio.Name = "btnlogoInicio";
-            this.btnlogoInicio.Size = new System.Drawing.Size(254, 76);
-            this.btnlogoInicio.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnlogoInicio.TabIndex = 0;
-            this.btnlogoInicio.TabStop = false;
-            this.btnlogoInicio.Click += new System.EventHandler(this.btnlogoInicio_Click);
-            // 
             // BarraTitulo
             // 
             this.BarraTitulo.BackColor = System.Drawing.Color.WhiteSmoke;
@@ -323,8 +323,9 @@
             this.panelContenedor.Name = "panelContenedor";
             this.panelContenedor.Size = new System.Drawing.Size(1050, 605);
             this.panelContenedor.TabIndex = 2;
+            this.panelContenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.panelContenedor_Paint);
             // 
-            // Form1
+            // SideBarMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -334,13 +335,13 @@
             this.Controls.Add(this.MenuVertical);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Form1";
+            this.Name = "SideBarMenu";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.MenuVertical.ResumeLayout(false);
             this.MenuVertical.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnlogoInicio)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.BarraTitulo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.iconminimizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconrestaurar)).EndInit();
