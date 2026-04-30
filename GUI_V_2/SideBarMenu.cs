@@ -21,7 +21,7 @@ namespace GUI_V_2
         {
             if (MenuVertical.Width == 250)
             {
-                MenuVertical.Width = 70;
+                MenuVertical.Width = 60;
             }
             else
                 MenuVertical.Width = 250;
@@ -65,10 +65,12 @@ namespace GUI_V_2
 
         private void AbrirFormEnPanel(object Formhijo)
         {
+            if (Formhijo == null) return;
+            Form fh = Formhijo as Form;
+            if (fh == null || fh == this) return;
             if (this.panelContenedor.Controls.Count > 0)
                 this.panelContenedor.Controls.RemoveAt(0);
-            Form fh = Formhijo as Form;
-            fh.TopLevel = false;
+              fh.TopLevel = false;
             fh.Dock = DockStyle.Fill;
             this.panelContenedor.Controls.Add(fh);
             this.panelContenedor.Tag = fh;
@@ -82,11 +84,10 @@ namespace GUI_V_2
 
         private void btnlogoInicio_Click(object sender, EventArgs e)
         {
-            // Open a different form, not SideBarMenu itself
-            // AbrirFormEnPanel(new SomeOtherForm());
+            AbrirFormEnPanel(new InicioResumen());
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void SideBarMenu_Load(object sender, EventArgs e)
         {
             btnlogoInicio_Click(null,e);
         }
