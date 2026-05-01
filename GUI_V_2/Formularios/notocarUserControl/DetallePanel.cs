@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace GUI_V_2.Formularios
 {
-    public partial class FacturaControl : UserControl
+    public partial class DetallePanel : UserControl
     {
-        public FacturaControl()
+        public DetallePanel()
         {
             InitializeComponent();
         }

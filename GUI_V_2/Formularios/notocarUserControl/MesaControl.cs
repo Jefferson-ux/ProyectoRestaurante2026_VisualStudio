@@ -10,11 +10,17 @@ using System.Windows.Forms;
 
 namespace GUI_V_2.Formularios
 {
-    public partial class PedidoControl : UserControl
+    public partial class MesaControl : UserControl
     {
-        public PedidoControl()
+        public MesaControl()
         {
             InitializeComponent();
+
         }
+
+
+
+
+
     }
 }
