@@ -92,7 +92,6 @@ namespace GUI_V_2
             btnlogoInicio_Click(null,e);
         }
 
-        private void panelContenedor_Paint(object sender, PaintEventArgs e)
         {
 
         }
