@@ -46,29 +46,41 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Formularios\PedidoControl.cs">
+    <Compile Include="Formularios\DetalleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\DetalleForm.Designer.cs">
+      <DependentUpon>DetalleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\MesaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\MesaForm.Designer.cs">
+      <DependentUpon>MesaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\notocarUserControl\PedidoControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Formularios\PedidoControl.Designer.cs">
+    <Compile Include="Formularios\notocarUserControl\PedidoControl.Designer.cs">
       <DependentUpon>PedidoControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\FacturaControl.cs">
+    <Compile Include="Formularios\notocarUserControl\MesaControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Formularios\FacturaControl.Designer.cs">
-      <DependentUpon>FacturaControl.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Formularios\MesaControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Formularios\MesaControl.Designer.cs">
+    <Compile Include="Formularios\notocarUserControl\MesaControl.Designer.cs">
       <DependentUpon>MesaControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\UserControl1.cs">
+    <Compile Include="Formularios\notocarUserControl\DetallePanel.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Formularios\UserControl1.Designer.cs">
-      <DependentUpon>UserControl1.cs</DependentUpon>
+    <Compile Include="Formularios\notocarUserControl\DetallePanel.Designer.cs">
+      <DependentUpon>DetallePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\PedidoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\PedidoForm.Designer.cs">
+      <DependentUpon>PedidoForm.cs</DependentUpon>
     </Compile>
     <Compile Include="SideBarMenu.cs">
       <SubType>Form</SubType>
@@ -90,14 +102,23 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Formularios\MesaControl.resx">
+    <EmbeddedResource Include="Formularios\DetalleForm.resx">
+      <DependentUpon>DetalleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\MesaForm.resx">
+      <DependentUpon>MesaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\notocarUserControl\MesaControl.resx">
       <DependentUpon>MesaControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\PedidoControl.resx">
+    <EmbeddedResource Include="Formularios\notocarUserControl\PedidoControl.resx">
       <DependentUpon>PedidoControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\UserControl1.resx">
-      <DependentUpon>UserControl1.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\notocarUserControl\DetallePanel.resx">
+      <DependentUpon>DetallePanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\PedidoForm.resx">
+      <DependentUpon>PedidoForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SideBarMenu.resx">
       <DependentUpon>SideBarMenu.cs</DependentUpon>
@@ -131,6 +152,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

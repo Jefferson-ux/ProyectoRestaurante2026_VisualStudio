@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace GUI_V_2.Formularios
 {
-    public partial class UserControl1 : UserControl
+    public partial class MesaForm : Form
     {
-        public UserControl1()
+        public MesaForm()
         {
             InitializeComponent();
         }

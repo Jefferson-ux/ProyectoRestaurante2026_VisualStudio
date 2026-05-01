@@ -1,16 +1,16 @@
 ﻿namespace GUI_V_2.Formularios
 {
-    partial class PedidoControl
+    partial class MesaForm
     {
-        /// <summary> 
-        /// Variable del diseñador necesaria.
+        /// <summary>
+        /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary> 
-        /// Limpiar los recursos que se estén usando.
+        /// <summary>
+        /// Clean up any resources being used.
         /// </summary>
-        /// <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -20,15 +20,17 @@
             base.Dispose(disposing);
         }
 
-        #region Código generado por el Diseñador de componentes
+        #region Windows Form Designer generated code
 
-        /// <summary> 
-        /// Método necesario para admitir el Diseñador. No se puede modificar
-        /// el contenido de este método con el editor de código.
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridViewPedidos = new System.Windows.Forms.DataGridView();
+            this.btnAdd = new System.Windows.Forms.Button();
+            this.lblTitulo = new System.Windows.Forms.Label();
+            this.dataGridViewMesa = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.txtBuscar = new System.Windows.Forms.TextBox();
             this.btnListar = new System.Windows.Forms.Button();
@@ -37,22 +39,39 @@
             this.btnQuit = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
-            this.btnAdd = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.lblTitulo = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPedidos)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMesa)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // dataGridViewPedidos
+            // btnAdd
             // 
-            this.dataGridViewPedidos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewPedidos.Location = new System.Drawing.Point(30, 162);
-            this.dataGridViewPedidos.Name = "dataGridViewPedidos";
-            this.dataGridViewPedidos.RowHeadersWidth = 51;
-            this.dataGridViewPedidos.RowTemplate.Height = 24;
-            this.dataGridViewPedidos.Size = new System.Drawing.Size(773, 425);
-            this.dataGridViewPedidos.TabIndex = 10;
+            this.btnAdd.Location = new System.Drawing.Point(832, 139);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(180, 60);
+            this.btnAdd.TabIndex = 11;
+            this.btnAdd.Text = "AÑADIR";
+            this.btnAdd.UseVisualStyleBackColor = true;
+            // 
+            // lblTitulo
+            // 
+            this.lblTitulo.AutoSize = true;
+            this.lblTitulo.Font = new System.Drawing.Font("Verdana", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitulo.Location = new System.Drawing.Point(359, -6);
+            this.lblTitulo.Name = "lblTitulo";
+            this.lblTitulo.Size = new System.Drawing.Size(455, 48);
+            this.lblTitulo.TabIndex = 12;
+            this.lblTitulo.Text = "REGISTRO DE MESAS";
+            // 
+            // dataGridViewMesa
+            // 
+            this.dataGridViewMesa.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewMesa.Location = new System.Drawing.Point(21, 139);
+            this.dataGridViewMesa.Name = "dataGridViewMesa";
+            this.dataGridViewMesa.RowHeadersWidth = 51;
+            this.dataGridViewMesa.RowTemplate.Height = 24;
+            this.dataGridViewMesa.Size = new System.Drawing.Size(773, 425);
+            this.dataGridViewMesa.TabIndex = 10;
             // 
             // label1
             // 
@@ -75,7 +94,7 @@
             // 
             // btnListar
             // 
-            this.btnListar.Location = new System.Drawing.Point(841, 93);
+            this.btnListar.Location = new System.Drawing.Point(832, 70);
             this.btnListar.Name = "btnListar";
             this.btnListar.Size = new System.Drawing.Size(180, 60);
             this.btnListar.TabIndex = 19;
@@ -84,7 +103,7 @@
             // 
             // btnXLSExport
             // 
-            this.btnXLSExport.Location = new System.Drawing.Point(841, 527);
+            this.btnXLSExport.Location = new System.Drawing.Point(832, 504);
             this.btnXLSExport.Name = "btnXLSExport";
             this.btnXLSExport.Size = new System.Drawing.Size(180, 60);
             this.btnXLSExport.TabIndex = 18;
@@ -93,7 +112,7 @@
             // 
             // btnPDFExport
             // 
-            this.btnPDFExport.Location = new System.Drawing.Point(841, 461);
+            this.btnPDFExport.Location = new System.Drawing.Point(832, 438);
             this.btnPDFExport.Name = "btnPDFExport";
             this.btnPDFExport.Size = new System.Drawing.Size(180, 60);
             this.btnPDFExport.TabIndex = 17;
@@ -102,7 +121,7 @@
             // 
             // btnQuit
             // 
-            this.btnQuit.Location = new System.Drawing.Point(841, 360);
+            this.btnQuit.Location = new System.Drawing.Point(832, 337);
             this.btnQuit.Name = "btnQuit";
             this.btnQuit.Size = new System.Drawing.Size(180, 60);
             this.btnQuit.TabIndex = 16;
@@ -111,7 +130,7 @@
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(841, 294);
+            this.btnUpdate.Location = new System.Drawing.Point(832, 271);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(180, 60);
             this.btnUpdate.TabIndex = 15;
@@ -120,61 +139,41 @@
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(841, 228);
+            this.btnSave.Location = new System.Drawing.Point(832, 205);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(180, 60);
             this.btnSave.TabIndex = 14;
             this.btnSave.Text = "GUARDAR";
             this.btnSave.UseVisualStyleBackColor = true;
             // 
-            // btnAdd
-            // 
-            this.btnAdd.Location = new System.Drawing.Point(841, 162);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(180, 60);
-            this.btnAdd.TabIndex = 11;
-            this.btnAdd.Text = "AÑADIR";
-            this.btnAdd.UseVisualStyleBackColor = true;
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(53)))));
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.txtBuscar);
-            this.panel1.Location = new System.Drawing.Point(30, 93);
+            this.panel1.Location = new System.Drawing.Point(21, 70);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(773, 63);
             this.panel1.TabIndex = 13;
             // 
-            // lblTitulo
-            // 
-            this.lblTitulo.AutoSize = true;
-            this.lblTitulo.Font = new System.Drawing.Font("Verdana", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitulo.Location = new System.Drawing.Point(303, 22);
-            this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(500, 48);
-            this.lblTitulo.TabIndex = 12;
-            this.lblTitulo.Text = "REGISTRO DE PEDIDOS";
-            // 
-            // PedidoControl
+            // MesaForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.dataGridViewPedidos);
+            this.ClientSize = new System.Drawing.Size(1032, 558);
+            this.Controls.Add(this.btnAdd);
+            this.Controls.Add(this.lblTitulo);
+            this.Controls.Add(this.dataGridViewMesa);
             this.Controls.Add(this.btnListar);
             this.Controls.Add(this.btnXLSExport);
             this.Controls.Add(this.btnPDFExport);
             this.Controls.Add(this.btnQuit);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.btnSave);
-            this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.lblTitulo);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.Name = "PedidoControl";
-            this.Size = new System.Drawing.Size(1050, 605);
-            this.Load += new System.EventHandler(this.PedidoControl_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPedidos)).EndInit();
+            this.Name = "MesaForm";
+            this.Text = "MesaForm";
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMesa)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -184,7 +183,9 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridViewPedidos;
+        private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.Label lblTitulo;
+        private System.Windows.Forms.DataGridView dataGridViewMesa;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtBuscar;
         private System.Windows.Forms.Button btnListar;
@@ -193,8 +194,6 @@
         private System.Windows.Forms.Button btnQuit;
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnSave;
-        private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label lblTitulo;
     }
 }
