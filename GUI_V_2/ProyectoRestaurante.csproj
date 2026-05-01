@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -57,6 +58,18 @@
     <Compile Include="Formularios\FacturaControl.Designer.cs">
       <DependentUpon>FacturaControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\MesaControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Formularios\MesaControl.Designer.cs">
+      <DependentUpon>MesaControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\UserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Formularios\UserControl1.Designer.cs">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </Compile>
     <Compile Include="SideBarMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -77,8 +90,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Formularios\MesaControl.resx">
+      <DependentUpon>MesaControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\PedidoControl.resx">
       <DependentUpon>PedidoControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\UserControl1.resx">
+      <DependentUpon>UserControl1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SideBarMenu.resx">
       <DependentUpon>SideBarMenu.cs</DependentUpon>

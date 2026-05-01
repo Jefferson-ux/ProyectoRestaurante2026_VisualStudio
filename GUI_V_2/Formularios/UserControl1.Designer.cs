@@ -1,6 +1,6 @@
 ﻿namespace GUI_V_2.Formularios
 {
-    partial class PedidoControl
+    partial class UserControl1
     {
         /// <summary> 
         /// Variable del diseñador necesaria.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridViewPedidos = new System.Windows.Forms.DataGridView();
+            this.dataGridViewDetalles = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.txtBuscar = new System.Windows.Forms.TextBox();
             this.btnListar = new System.Windows.Forms.Button();
@@ -40,19 +40,19 @@
             this.btnAdd = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblTitulo = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPedidos)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDetalles)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // dataGridViewPedidos
+            // dataGridViewDetalles
             // 
-            this.dataGridViewPedidos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewPedidos.Location = new System.Drawing.Point(30, 162);
-            this.dataGridViewPedidos.Name = "dataGridViewPedidos";
-            this.dataGridViewPedidos.RowHeadersWidth = 51;
-            this.dataGridViewPedidos.RowTemplate.Height = 24;
-            this.dataGridViewPedidos.Size = new System.Drawing.Size(773, 425);
-            this.dataGridViewPedidos.TabIndex = 10;
+            this.dataGridViewDetalles.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewDetalles.Location = new System.Drawing.Point(30, 162);
+            this.dataGridViewDetalles.Name = "dataGridViewDetalles";
+            this.dataGridViewDetalles.RowHeadersWidth = 51;
+            this.dataGridViewDetalles.RowTemplate.Height = 24;
+            this.dataGridViewDetalles.Size = new System.Drawing.Size(773, 425);
+            this.dataGridViewDetalles.TabIndex = 10;
             // 
             // label1
             // 
@@ -149,18 +149,18 @@
             // lblTitulo
             // 
             this.lblTitulo.AutoSize = true;
-            this.lblTitulo.Font = new System.Drawing.Font("Verdana", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitulo.Location = new System.Drawing.Point(303, 22);
+            this.lblTitulo.Font = new System.Drawing.Font("Verdana", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitulo.Location = new System.Drawing.Point(73, 25);
             this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(500, 48);
+            this.lblTitulo.Size = new System.Drawing.Size(856, 41);
             this.lblTitulo.TabIndex = 12;
-            this.lblTitulo.Text = "REGISTRO DE PEDIDOS";
+            this.lblTitulo.Text = "VISUALIZACIÓN DE LOS DETALLES DE PEDIDOS";
             // 
-            // PedidoControl
+            // UserControl1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.dataGridViewPedidos);
+            this.Controls.Add(this.dataGridViewDetalles);
             this.Controls.Add(this.btnListar);
             this.Controls.Add(this.btnXLSExport);
             this.Controls.Add(this.btnPDFExport);
@@ -170,11 +170,9 @@
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lblTitulo);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.Name = "PedidoControl";
+            this.Name = "UserControl1";
             this.Size = new System.Drawing.Size(1050, 605);
-            this.Load += new System.EventHandler(this.PedidoControl_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPedidos)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDetalles)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -184,7 +182,7 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridViewPedidos;
+        private System.Windows.Forms.DataGridView dataGridViewDetalles;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtBuscar;
         private System.Windows.Forms.Button btnListar;
