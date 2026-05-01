@@ -17,31 +17,63 @@ namespace GUI_V_2
         {
             InitializeComponent();
         }
+
+        //METODOS PARA ANIMACION DE MENU SLIDING--
         private void btnMenu_Click(object sender, EventArgs e)
         {
             if (MenuVertical.Width == 250)
             {
-                MenuVertical.Width = 60;
+                this.tmContraerMenu.Start();
             }
-            else
-                MenuVertical.Width = 250;
+            else if (MenuVertical.Width == 60)
+            {
+                this.tmExpandirMenu.Start();
+            }
         }
+
+        private void tmExpandirMenu_Tick(object sender, EventArgs e)
+        {
+            if (MenuVertical.Width >= 250)
+                this.tmExpandirMenu.Stop();
+            else
+                MenuVertical.Width = MenuVertical.Width + 5;
+
+        }
+
+        private void tmContraerMenu_Tick(object sender, EventArgs e)
+        {
+            if (MenuVertical.Width <= 60)
+                this.tmContraerMenu.Stop();
+            else
+                MenuVertical.Width = MenuVertical.Width - 5;
+        }
+
 
         private void iconcerrar_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
+        //METODOS PARA CERRAR,MAXIMIZAR, MINIMIZAR FORMULARIO------------------------------------------------------
+        int LX, LY;
+        int SW, SH;
+
         private void iconmaximizar_Click(object sender, EventArgs e)
         {
-            this.WindowState = FormWindowState.Maximized;
-            iconrestaurar.Visible = true;
+            LX = this.Location.X;
+            LY = this.Location.Y;
+            SW = this.Size.Width;
+            SH = this.Size.Height;
+            this.Size = Screen.PrimaryScreen.WorkingArea.Size;
+            this.Location = Screen.PrimaryScreen.WorkingArea.Location;
             iconmaximizar.Visible = false;
+            iconrestaurar.Visible = true;
         }
 
         private void iconrestaurar_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Normal;
+        { 
+            this.Size = new Size(SW, SH);
+            this.Location = new Point(LX, LY);
             iconrestaurar.Visible = false;
             iconmaximizar.Visible = true;
         }
@@ -77,9 +109,9 @@ namespace GUI_V_2
             fh.Show();
         }
 
-        private void btnprod_Click(object sender, EventArgs e)
+        private void btnEmpleados_Click(object sender, EventArgs e)
         {
-            AbrirFormEnPanel(new ProductosPanel());
+
         }
 
         private void btnlogoInicio_Click(object sender, EventArgs e)
@@ -87,13 +119,55 @@ namespace GUI_V_2
             AbrirFormEnPanel(new InicioResumen());
         }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnClientes_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnPedidos_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnFacturas_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnPlatosMenu_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnMesa_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnProductos_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnContratos_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void SideBarMenu_Load(object sender, EventArgs e)
         {
             btnlogoInicio_Click(null,e);
         }
 
-        {
-
-        }
     }
 }
