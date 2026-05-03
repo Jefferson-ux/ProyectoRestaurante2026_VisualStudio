@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace GUI_V_2
 {
-    public partial class PedidoForm : Form
+    public partial class ClientesForm : Form
     {
-        public PedidoForm()
+        public ClientesForm()
         {
             InitializeComponent();
         }

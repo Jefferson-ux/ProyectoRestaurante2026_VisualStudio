@@ -329,7 +329,7 @@
             this.TablaProductos.Name = "TablaProductos";
             this.TablaProductos.RowHeadersVisible = false;
             this.TablaProductos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.TablaProductos.Size = new System.Drawing.Size(464, 330);
+            this.TablaProductos.Size = new System.Drawing.Size(464, 325);
             this.TablaProductos.TabIndex = 39;
             this.TablaProductos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.TablaProductos_CellContentClick);
             // 
@@ -589,7 +589,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
-            this.ClientSize = new System.Drawing.Size(1050, 610);
+            this.ClientSize = new System.Drawing.Size(1050, 605);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lblFecha);
