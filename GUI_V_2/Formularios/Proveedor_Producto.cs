@@ -10,14 +10,19 @@ using System.Windows.Forms;
 
 namespace GUI_V_2
 {
-    public partial class ClientesForm : Form
+    public partial class Proveedor_Producto : Form
     {
-        public ClientesForm()
+        public Proveedor_Producto()
         {
             InitializeComponent();
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
         {
 
         }

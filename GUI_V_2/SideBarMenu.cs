@@ -270,16 +270,25 @@ namespace GUI_V_2
         }
 
 
-        private void btnEmpleados_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnClientes_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Hola");
             btnHijo_Click(sender, e);
             AbrirFormEnPanel(new ClientesForm());
+        }
+        private void btnPedidos_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Hola");
+            btnHijo_Click(sender, e);
+            AbrirFormEnPanel(new PedidoForm());
+        }
+
+
+        private void btnEmpleados_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Hola");
+            btnHijo_Click(sender, e);
+            AbrirFormEnPanel(new Empleado());
         }
 
         private void btnFacturas_Click(object sender, EventArgs e)
@@ -294,7 +303,9 @@ namespace GUI_V_2
 
         private void btnMesa_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show("Hola");
+            btnHijo_Click(sender, e);
+            AbrirFormEnPanel(new MesaForm());
         }
 
         private void btnProductos_Click(object sender, EventArgs e)
@@ -307,13 +318,6 @@ namespace GUI_V_2
         private void panelContenedor_Paint(object sender, PaintEventArgs e)
         {
 
-        }
-
-        private void btnPedidos_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Hola");
-            btnHijo_Click(sender, e);
-            AbrirFormEnPanel(new PedidoForm());
         }
 
         private void btnVentServ_Click(object sender, EventArgs e)
@@ -343,17 +347,23 @@ namespace GUI_V_2
 
         private void btnMesas_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show("Hola");
+            btnHijo_Click(sender, e);
+            AbrirFormEnPanel(new MesaForm());
         }
 
         private void btnProvProd_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show("Hola");
+            btnHijo_Click(sender, e);
+            AbrirFormEnPanel(new Proveedor_Producto());
         }
 
         private void btnProveedores_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show("Hola");
+            btnHijo_Click(sender, e);
+            AbrirFormEnPanel(new Proveedor());
         }
 
         private void btnReservas_Click(object sender, EventArgs e)
@@ -368,7 +378,9 @@ namespace GUI_V_2
 
         private void btnDetaPedi_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show("Hola");
+            btnHijo_Click(sender, e);
+            AbrirFormEnPanel(new DetalleForm());
         }
 
         private void btnContratos_Click(object sender, EventArgs e)

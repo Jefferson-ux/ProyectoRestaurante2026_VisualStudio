@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace GUI_V_2.Formularios
+namespace GUI_V_2
 {
     public partial class MesaForm : Form
     {

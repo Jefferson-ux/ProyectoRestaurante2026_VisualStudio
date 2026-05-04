@@ -1,4 +1,4 @@
-﻿namespace GUI_V_2.Formularios
+﻿namespace GUI_V_2
 {
     partial class DetalleForm
     {
